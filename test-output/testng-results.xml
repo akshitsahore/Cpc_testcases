@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-01T17:13:22Z" name="Default suite" finished-at="2022-06-01T17:15:48Z" duration-ms="146447">
+    <groups>
+    </groups>
+    <test started-at="2022-06-01T17:13:22Z" name="Default test" finished-at="2022-06-01T17:15:48Z" duration-ms="146447">
+      <class name="Sample_test.demo">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:13:22Z" name="setupClass" finished-at="2022-06-01T17:13:23Z" duration-ms="1436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:13:23Z" name="setupTest" finished-at="2022-06-01T17:13:28Z" duration-ms="5264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="Download_jpeg()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:13:28Z" name="Download_jpeg" finished-at="2022-06-01T17:14:11Z" duration-ms="42745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Download_jpeg -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:14:11Z" name="teardown" finished-at="2022-06-01T17:14:12Z" duration-ms="897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:14:12Z" name="setupTest" finished-at="2022-06-01T17:14:16Z" duration-ms="4019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="cpc_analysis_enquiry()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:14:16Z" name="cpc_analysis_enquiry" finished-at="2022-06-01T17:15:07Z" duration-ms="50787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cpc_analysis_enquiry -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:15:07Z" name="teardown" finished-at="2022-06-01T17:15:08Z" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:15:08Z" name="setupTest" finished-at="2022-06-01T17:15:12Z" duration-ms="3982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="cpc_analysis_view_enquiry()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:15:12Z" name="cpc_analysis_view_enquiry" finished-at="2022-06-01T17:15:34Z" duration-ms="22626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cpc_analysis_view_enquiry -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:15:34Z" name="teardown" finished-at="2022-06-01T17:15:35Z" duration-ms="690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:15:35Z" name="setupTest" finished-at="2022-06-01T17:15:39Z" duration-ms="3983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="loginTest()[pri:1, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:15:39Z" name="loginTest" finished-at="2022-06-01T17:15:47Z" duration-ms="8423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Sample_test.demo@7ceb3185]" started-at="2022-06-01T17:15:47Z" name="teardown" finished-at="2022-06-01T17:15:48Z" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Sample_test.demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
