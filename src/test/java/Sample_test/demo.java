@@ -33,10 +33,10 @@ public class demo {
 	        driver.quit();
 	    }
 
-	    @Test(priority = 1)
+	    @Test(priority = -2)
 	    void loginTest() throws InterruptedException { 
                         Login();
-	        
+                        Login2();
 	    }
 	    
 	    
@@ -54,7 +54,14 @@ public class demo {
 	    	jsex.executeScript("document.getElementById('start_date').value = '2022-05-01';");	    	
 	    	jsex.executeScript("document.getElementById('end_date').value = '2022-05-30';");  
 	    }
-	    
+	    public void Login2() throws InterruptedException{
+	    	driver.get("http://tms.pisystindia.com/siteengineer/login");
+	    	Thread.sleep(3000);
+	    	driver.findElement(By.id("siteengineer_email")).sendKeys("siteengineer@gmail.com");
+	    	driver.findElement(By.id("siteengineer_password")).sendKeys("123456");
+	    	driver.findElement(By.className("btn")).click();
+	    	
+	    }
 	    @Test
 	    void cpc_analysis_enquiry() throws InterruptedException{
 	    	Login();
@@ -148,6 +155,40 @@ public class demo {
 	    	 driver.findElement(By.id("download-PieChartToolPrice")).click();
 	    	 Thread.sleep(6000);
 	    }
+	    
+	    @Test
+	    void site_engineering_excelandpdf() throws InterruptedException{
+	    Login2();
+	    Thread.sleep(3000);
+	    driver.findElement(By.linkText("Components"));
+	    Thread.sleep(3000);
+	    driver.findElement(By.xpath("//*[@id=\"example_wrapper\"]/div[1]/div[1]/div[2]/button[2]")).click();
+	    Thread.sleep(3000);
+	    driver.findElement(By.xpath("//*[@id=\"example_wrapper\"]/div[1]/div[1]/div[2]/button[3]")).click();
+	    Thread.sleep(6000);
+	    }
+	    
+	    @Test(priority = -1)
+	    void site_engineering_addcomponent() throws InterruptedException{
+	    Login2();
+	    Thread.sleep(3000);
+	    driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/ul/li[5]/a")).click();
+	    Thread.sleep(3000);
+	    driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div/div[1]/a")).click();
+	    Thread.sleep(3000);
+	    driver.findElement(By.id("component_name")).sendKeys("demo");
+	    Thread.sleep(3000);
+	    driver.findElement(By.id("component_code")).sendKeys("12345");
+	    Thread.sleep(3000);
+	    driver.findElement(By.id("component_material")).sendKeys("raw");
+	    Thread.sleep(3000);
+	    driver.findElement(By.id("component_description")).sendKeys("raw");
+	    Thread.sleep(3000);
+	    driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/div/div/div/div[3]/button")).click();
+	    
+	    Thread.sleep(6000);
+	    }
+	    
 	    
 
 }
